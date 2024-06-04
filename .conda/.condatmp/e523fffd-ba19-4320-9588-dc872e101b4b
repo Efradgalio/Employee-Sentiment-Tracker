@@ -1,0 +1,13 @@
+prefix=e:/My Drive/Learning/From Bootcamp/IndonesiaAI - NLP/Final Project/.conda/Library
+exec_prefix=e:/My Drive/Learning/From Bootcamp/IndonesiaAI - NLP/Final Project/.conda/Library
+libdir=e:/My Drive/Learning/From Bootcamp/IndonesiaAI - NLP/Final Project/.conda/Library/lib
+sharedlibdir=e:/My Drive/Learning/From Bootcamp/IndonesiaAI - NLP/Final Project/.conda/Library/lib
+includedir=e:/My Drive/Learning/From Bootcamp/IndonesiaAI - NLP/Final Project/.conda/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
