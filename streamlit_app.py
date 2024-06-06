@@ -1,20 +1,27 @@
-import streamlit as st
-import random
 import time
+import random
+import streamlit as st
 
-# Streamed response emulator
-def response_generator():
-    response = random.choice(
-        [
-            "Hello there! How can I assist you today?",
-            "Hi, human! Is there anything I can help you with?",
-            "Do you need help?",
-        ]
-    )
+
+
+responses = [
+            "Thank you, your feedback will be processed and review by our HR team.",
+            "Your Welcome, if you want to submit the feedbacks again, please refresh the website.",
+           ]
+
+
+# Initialize session state if not already done
+if 'step' not in st.session_state:
+    st.session_state.step = 0
+
+def get_next_response():
+    # Get the next response based on the current step
+    response = responses[st.session_state.step]
+    st.session_state.step = (st.session_state.step + 1) % len(responses)
+
     for word in response.split():
         yield word + " "
         time.sleep(0.05)
-
 
 st.title("Sparkbot")
 
@@ -42,7 +49,7 @@ if prompt := st.chat_input("What is up?"):
 
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
-        response = st.write_stream(response_generator())
+        response = st.write_stream(get_next_response())
+
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
-
