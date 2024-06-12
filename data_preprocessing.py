@@ -37,6 +37,7 @@ def print_json(data):
 
 # Function to remove stopwords
 def remove_stopwords(text):
+    stop_words = set(stopwords.words('english'))
     if not isinstance(text, str):
         return text  # Return text that is not string
     words = text.split()  # Split text into words
@@ -120,7 +121,6 @@ def processing(file_path):
     df_processed['user_responses_cleaned'] = df['content'].apply(lambda x: x.lower() if isinstance(x, str) else x)
 
     ## -- STOP WORDS -- ##
-    stop_words = set(stopwords.words('english'))
     df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].astype(str).apply(remove_stopwords)
 
     ## -- REMOVE PUNCTUATION -- ##

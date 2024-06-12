@@ -1,6 +1,8 @@
 import time
 import random
 import json
+import data_preprocessing
+
 import streamlit as st
 
 from streamlit_option_menu import option_menu
@@ -94,7 +96,12 @@ if selected == 'Sparkbot':
 
             send_message()
     else:
-        st.write("You have reached the message limit. Please refresh the page to start a new conversation.")
+        st.write("Your Feedbacks is already being processed. Please check in the Employee Tracker Menu to see more.")
+
+        # Read User Response
+        file_path = 'user_employee_feedbacks/user_employee_feedbacks.json'
+        test_data = data_preprocessing.processing(file_path)
+        st.session_state.test_data = test_data
 
 
 if selected == 'Employee Tracker':
@@ -102,6 +109,8 @@ if selected == 'Employee Tracker':
 
     tab_titles = ['Overview', 'Sentiment Analysis', 'Topic Modelling']
     tabs = st.tabs(tab_titles)
+
+    st.table(st.session_state.test_data)
 
 if selected == 'Contact Us':
     st.header(":mailbox: Get In Touch With Us!")
