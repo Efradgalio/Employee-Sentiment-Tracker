@@ -91,6 +91,11 @@ def replace_words(text, replacements):
         text = re.sub(old_word, new_word, text)
     return text
 
+def remove_duplicate_letters(text):
+    # Menggunakan regular expression untuk menghapus huruf yang berulang
+    text = re.sub(r'(.)\1+', r'\1', text)
+    return text
+
 ## -- LEMMATIZATION -- ##
 def custom_lemmatization(text, exclude_words=[]):
     lemmatizer = WordNetLemmatizer()
@@ -107,7 +112,7 @@ def processing(file_path):
     data = read_json(file_path)
 
     # Normalize the nested JSON
-    df = pd.json_normalize(data['content'])
+    df = pd.json_normalize(data['user_responses'])
 
     ## DATA PREPROCESSING ##
     ## -- LOWERCASE -- ##
@@ -116,19 +121,23 @@ def processing(file_path):
 
     ## -- STOP WORDS -- ##
     stop_words = set(stopwords.words('english'))
-    df_processed['user_responses_cleaned'] = df_processed['content'].astype(str).apply(remove_stopwords)
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].astype(str).apply(remove_stopwords)
 
     ## -- REMOVE PUNCTUATION -- ##
-    df_processed['user_responses_cleaned'] = df_processed['content'].apply(remove_punctuation)
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(remove_punctuation)
 
 
     ## -- REMOVE OTHER PUNCTUATION -- ##
-    df_processed['user_responses_cleaned'] = df_processed['content'].apply(remove_non_alpha)
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(remove_non_alpha)
 
     ## -- SLANG WORDS -- ##
-    df_processed['user_responses_cleaned'] = df_processed['content'].apply(lambda x: replace_words(x, replacements))
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(lambda x: replace_words(x, replacements))
+
+    ## -- Duplicate Words -- ##
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(lambda x: remove_duplicate_letters(x))
 
     ## -- LEMMATIZATOIN -- ##
-    df_processed['user_responses_cleaned'] = df_processed['content'].apply(custom_lemmatization)
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(custom_lemmatization)
     
     return df_processed
+
