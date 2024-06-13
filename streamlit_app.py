@@ -13,12 +13,14 @@ import plotly.express as px
 from datetime import datetime, date
 
 from streamlit_option_menu import option_menu
+from bert_sentiment import BertSentimentAnalyzer
 
 import data_preprocessing
 
 path = os.getcwd()
 TOPIC_MODELING_FOLDER = 'topic_modeling'
 MODEL_NAME = 'final_xgboost_sg_tuned.joblib'
+SENTIMEN_MODEL_NAME = 'habibul08/employee-sentiment-tracker'
 
 # Load XGBoost Model for Topic Predictions
 model = joblib.load(os.path.join(TOPIC_MODELING_FOLDER, MODEL_NAME))
@@ -124,13 +126,26 @@ if selected == 'Sparkbot':
         file_path = 'user_employee_feedbacks/user_employee_feedbacks.json'
         test_data = data_preprocessing.processing(file_path)
 
+        bert_sentiment = BertSentimentAnalyzer(SENTIMEN_MODEL_NAME)
+        user_predictions = bert_sentiment.tokenize_predict(test_data.iloc[-1]['user_responses_cleaned'])
+
+        # Determine sentiment
+        sentiment = "Positive" if user_predictions.argmax() == 1 else "Negative"
+
+        previously_test_data = pd.read_csv('./user_employee_feedbacks/user_feedbacks.csv')
+        test_data['sentiment'] = previously_test_data.sentiment
+
+        # Input the data into final test
+        test_data.loc[test_data.shape[0]-1, 'sentiment'] = sentiment
+
+        test_data.to_csv('./user_employee_feedbacks/user_feedbacks.csv')
 
         # Vectorize User Response
-        test_data_vectorized = data_preprocessing.embed_text(list(test_data['user_employee_feedbacks']))
+        # test_data_vectorized = data_preprocessing.embed_text(test_data['user_responses_cleaned'][-1])
 
         # Predicted Topic
-        predicted_topic = model.predict(test_data_vectorized)
-
+        # predicted_topic = model.predict(test_data_vectorized)
+        # test_data['topic'] = predicted_topic
         st.session_state.test_data = test_data
 
 
@@ -140,9 +155,36 @@ if selected == 'Employee Tracker':
     tab_titles = ['Overview', 'Sentiment Analysis', 'Topic Modelling']
     tab1, tab2, tab3 = st.tabs(tab_titles)
 
-    data_path = './dataset/Capgemini_Employee_Reviews_from_AmbitionBox.csv'
+    data_path = './dataset/data_employee_topic.csv'
     # Load the data
     data = pd.read_csv(data_path)
+
+
+    ## SIMPLE PREPROCESSING TO FIX DATE ##
+    data.Date = data.Date.str.replace(' ', '-')
+    data.Date = data.Date.str.replace('0', '1')
+    data.Date = data.Date.str.replace('0', '1')
+    data.Date = data.Date.str.replace('2017', '17')
+    data.Date = data.Date.str.replace('2018', '18')
+    data.Date = data.Date.str.replace('2019', '19')
+    data.Date = data.Date.str.replace('2020', '20')
+    data.Date = data.Date.str.replace('2021', '21')
+    data.Date = data.Date.str.replace('2022', '22')
+    data.Date = data.Date.str.replace('2023', '23')
+    data.Date = pd.to_datetime(data.Date)
+    data.Date = data.Date.astype(str)
+    data.Date = data.Date.str.replace('2123', '2023')
+    data.Date = data.Date.str.replace('2122', '2022')
+    data.Date = data.Date.str.replace('2121', '2021')
+    data.Date = data.Date.str.replace('2120', '2020')
+    data.Date = data.Date.str.replace('2119', '2019')
+    data.Date = data.Date.str.replace('2118', '2018')
+    data.Date = data.Date.str.replace('2117', '2017')
+    data.Date = pd.to_datetime(data.Date)
+
+    three_months_ago = pd.Timestamp(data.sort_values(by='Date',ascending=False).Date[0]) - pd.DateOffset(months=3)\
+    # Filter the DataFrame to include only rows from the last three months
+    filtered_data = data[data['Date'] >= three_months_ago]
 
     with tab1:
         # Count the total employees
@@ -164,7 +206,9 @@ if selected == 'Employee Tracker':
 
             # Read User Response
             file_path = 'user_employee_feedbacks/user_employee_feedbacks.json'
-            test_data = data_preprocessing.processing(file_path)
+
+            test_data = pd.read_csv('./user_employee_feedbacks/user_feedbacks.csv')
+            test_data = data_preprocessing.processing_csv(test_data)
            
             # Count Today's Total Feedbacks
             test_data['created_at'] = pd.to_datetime(test_data['created_at'])
@@ -185,17 +229,20 @@ if selected == 'Employee Tracker':
                 )
 
             st.write("List of Today's Feedbacks")
-            st.table(test_data.loc[test_data['created_at'].dt.date == today, ['created_at', 'content']].to_dict(orient='records'))# Calculate counts of each place
+            st.table(test_data.loc[test_data['created_at'].dt.date == today, ['created_at', 'content', 'sentiment']].to_dict(orient='records'))# Calculate counts of each place
+            st.subheader('Topic Distribution by Place & Departments for the past 3 months')
 
             ########################################## PLACE BARCHART #####################################################
-            place_counts = data['Place'].value_counts().reset_index()
-            place_counts.columns = ['Place', 'Count']
+            # Get counts of Place, Category, and Binary
+            place_category_binary_counts = filtered_data.groupby(['Place', 'Topic', 'Sentiment']).size().reset_index(name='Count')
 
-            # Sort by count and select top 10
-            top_places = place_counts.head(10)
+            # Sort by count and select top 10 places
+            top_places = place_category_binary_counts.groupby('Place').sum().reset_index().sort_values(by='Count', ascending=False).head(10)['Place']
+            top_place_category_binary_counts = place_category_binary_counts[place_category_binary_counts['Place'].isin(top_places)]
 
-            # Create a countplot using Plotly Express
-            fig = px.bar(top_places, x='Place', y='Count', title='Top 10 Places by Count')
+            # Create a grouped bar chart using Plotly Express
+            fig = px.bar(top_place_category_binary_counts, x='Place', y='Count', color='Topic',
+                        facet_col='Sentiment', title='Top 10 Places by Count, Topic, and Sentimen')
 
             # Add data labels (annotations)
             fig.update_traces(texttemplate='%{y}', textposition='outside')
@@ -211,17 +258,20 @@ if selected == 'Employee Tracker':
             st.plotly_chart(fig, use_container_width=True)
             ########################################## END OF PLACE BARCHART #####################################################
             ########################################## DEPARTMENT BARCHART #####################################################
+            # Get counts of Department, Category, and Binary
+            department_category_binary_counts = filtered_data.groupby(['Department', 'Topic', 'Sentiment']).size().reset_index(name='Count')
 
+            # Sort by count and select top 10 departments
+            top_departments = department_category_binary_counts.groupby('Department').sum().reset_index().sort_values(by='Count', ascending=False).head(10)['Department']
+            top_department_category_binary_counts = department_category_binary_counts[department_category_binary_counts['Department'].isin(top_departments)]
 
-            # Calculate counts of each Department
-            place_counts = data['Department'].value_counts().reset_index()
-            place_counts.columns = ['Department', 'Count']
+            # Define custom color sequence
+            custom_colors = ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A', '#19D3F3', '#FF6692', '#B6E880', '#FF97FF', '#FECB52']
 
-            # Sort by count and select top 10
-            top_places = place_counts.head(10)
-
-            # Create a countplot using Plotly Express
-            fig = px.bar(top_places, x='Department', y='Count', title='Top 10 Department by Count')
+            # Create a grouped bar chart using Plotly Express
+            fig = px.bar(top_department_category_binary_counts, x='Department', y='Count', color='Topic',
+                        facet_col='Sentiment', title='Top 10 Department by Count, Topic, and Sentimen',
+                        color_discrete_sequence=custom_colors)
 
             # Add data labels (annotations)
             fig.update_traces(texttemplate='%{y}', textposition='outside')
@@ -235,7 +285,7 @@ if selected == 'Employee Tracker':
 
             # Display the plot in Streamlit
             st.plotly_chart(fig, use_container_width=True)
-            ########################################## END OF PLACE BARCHART #####################################################
+            ########################################## END OF DEPARTMENT BARCHART #####################################################
    
         else:
             col1, col2, col3 = st.columns(3)
@@ -265,17 +315,21 @@ if selected == 'Employee Tracker':
                 )
 
             st.write("List of Today's Feedbacks")
-            st.table(test_data.loc[test_data['created_at'].dt.date == today, ['created_at', 'content']].to_dict(orient='records'))
+            st.table(test_data.loc[test_data['created_at'].dt.date == today, ['created_at', 'content', 'sentiment']].to_dict(orient='records'))
 
-            ########################################## PLACE BARCHART #####################################################
-            place_counts = data['Place'].value_counts().reset_index()
-            place_counts.columns = ['Place', 'Count']
 
-            # Sort by count and select top 10
-            top_places = place_counts.head(10)
+            st.subheader('Topic Distribution by Place & Departments for the past 3 months')
+             ########################################## PLACE BARCHART #####################################################
+            # Get counts of Place, Category, and Binary
+            place_category_binary_counts = filtered_data.groupby(['Place', 'Topic', 'Sentiment']).size().reset_index(name='Count')
 
-            # Create a countplot using Plotly Express
-            fig = px.bar(top_places, x='Place', y='Count', title='Top 10 Places by Count')
+            # Sort by count and select top 10 places
+            top_places = place_category_binary_counts.groupby('Place').sum().reset_index().sort_values(by='Count', ascending=False).head(10)['Place']
+            top_place_category_binary_counts = place_category_binary_counts[place_category_binary_counts['Place'].isin(top_places)]
+
+            # Create a grouped bar chart using Plotly Express
+            fig = px.bar(top_place_category_binary_counts, x='Place', y='Count', color='Topic',
+                        facet_col='Sentiment', title='Top 10 Places by Count, Topic, and Sentimen')
 
             # Add data labels (annotations)
             fig.update_traces(texttemplate='%{y}', textposition='outside')
@@ -291,17 +345,20 @@ if selected == 'Employee Tracker':
             st.plotly_chart(fig, use_container_width=True)
             ########################################## END OF PLACE BARCHART #####################################################
             ########################################## DEPARTMENT BARCHART #####################################################
+            # Get counts of Department, Category, and Binary
+            department_category_binary_counts = filtered_data.groupby(['Department', 'Topic', 'Sentiment']).size().reset_index(name='Count')
 
+            # Sort by count and select top 10 departments
+            top_departments = department_category_binary_counts.groupby('Department').sum().reset_index().sort_values(by='Count', ascending=False).head(10)['Department']
+            top_department_category_binary_counts = department_category_binary_counts[department_category_binary_counts['Department'].isin(top_departments)]
 
-            # Calculate counts of each Department
-            place_counts = data['Department'].value_counts().reset_index()
-            place_counts.columns = ['Department', 'Count']
+            # Define custom color sequence
+            custom_colors = ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A', '#19D3F3', '#FF6692', '#B6E880', '#FF97FF', '#FECB52']
 
-            # Sort by count and select top 10
-            top_places = place_counts.head(10)
-
-            # Create a countplot using Plotly Express
-            fig = px.bar(top_places, x='Department', y='Count', title='Top 10 Department by Count')
+            # Create a grouped bar chart using Plotly Express
+            fig = px.bar(top_department_category_binary_counts, x='Department', y='Count', color='Topic',
+                        facet_col='Sentiment', title='Top 10 Department by Count, Topic, and Sentimen',
+                        color_discrete_sequence=custom_colors)
 
             # Add data labels (annotations)
             fig.update_traces(texttemplate='%{y}', textposition='outside')
@@ -315,7 +372,8 @@ if selected == 'Employee Tracker':
 
             # Display the plot in Streamlit
             st.plotly_chart(fig, use_container_width=True)
-            ########################################## END OF PLACE BARCHART #####################################################
+            ########################################## END OF DEPARTMENT BARCHART #####################################################
+   
 
 if selected == 'Contact Us':
     st.header(":mailbox: Get In Touch With Us!")

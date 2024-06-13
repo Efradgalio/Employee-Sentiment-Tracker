@@ -1,0 +1,409 @@
+2024-06-13 19:32:57,637:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-06-13 19:33:00,638:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:159: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  data.Date = pd.to_datetime(data.Date)
+
+2024-06-13 19:33:56,592:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-06-13 19:33:58,200:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:159: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  data.Date = pd.to_datetime(data.Date)
+
+2024-06-13 19:33:59,517:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:197: UserWarning: Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  test_data['created_at'] = pd.to_datetime(test_data['created_at'])
+
+2024-06-13 19:36:20,029:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 19:36:21,749:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:159: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 19:36:21,909:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:197: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 19:36:34,943:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 19:36:36,718:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:159: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 19:36:36,883:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:197: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 19:37:16,210:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 19:37:17,741:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:159: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 19:37:17,895:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:197: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 19:38:45,562:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 19:39:39,768:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 19:40:40,687:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 19:45:50,003:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 19:46:23,138:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 20:34:42,297:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 20:35:16,006:WARNING:config.json:   0%|                                                                                                                                                                     | 0.00/754 [00:00<?, ?B/s]
+2024-06-13 20:35:16,007:WARNING:config.json: 100%|######################################################################################################################################################################| 754/754 [00:00<?, ?B/s]
+2024-06-13 20:35:16,007:WARNING:
+2024-06-13 20:35:16,010:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\huggingface_hub\file_download.py:157: UserWarning:
+
+`huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Frags\.cache\huggingface\hub\models--habibul08--employee-sentiment-tracker. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to see activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+
+
+2024-06-13 20:35:17,593:WARNING:model.safetensors:   0%|                                                                                                                                                              | 0.00/438M [00:00<?, ?B/s]
+2024-06-13 20:35:19,341:WARNING:model.safetensors:   2%|###5                                                                                                                                                 | 10.5M/438M [00:01<01:11, 6.00MB/s]
+2024-06-13 20:35:21,038:WARNING:model.safetensors:   5%|#######1                                                                                                                                             | 21.0M/438M [00:03<01:08, 6.10MB/s]
+2024-06-13 20:35:22,682:WARNING:model.safetensors:   7%|##########7                                                                                                                                          | 31.5M/438M [00:05<01:05, 6.23MB/s]
+2024-06-13 20:35:24,300:WARNING:model.safetensors:  10%|##############2                                                                                                                                      | 41.9M/438M [00:06<01:02, 6.32MB/s]
+2024-06-13 20:35:25,979:WARNING:model.safetensors:  12%|#################8                                                                                                                                   | 52.4M/438M [00:08<01:01, 6.30MB/s]
+2024-06-13 20:35:27,602:WARNING:model.safetensors:  14%|#####################4                                                                                                                               | 62.9M/438M [00:10<00:59, 6.35MB/s]
+2024-06-13 20:35:29,592:WARNING:model.safetensors:  17%|########################9                                                                                                                            | 73.4M/438M [00:11<01:01, 5.95MB/s]
+2024-06-13 20:35:31,296:WARNING:model.safetensors:  19%|############################5                                                                                                                        | 83.9M/438M [00:13<00:58, 6.01MB/s]
+2024-06-13 20:35:33,187:WARNING:model.safetensors:  22%|################################1                                                                                                                    | 94.4M/438M [00:15<00:58, 5.86MB/s]
+2024-06-13 20:35:35,584:WARNING:model.safetensors:  24%|###################################9                                                                                                                  | 105M/438M [00:17<01:02, 5.30MB/s]
+2024-06-13 20:35:37,467:WARNING:model.safetensors:  26%|#######################################5                                                                                                              | 115M/438M [00:19<00:59, 5.38MB/s]
+2024-06-13 20:35:39,754:WARNING:model.safetensors:  29%|###########################################                                                                                                           | 126M/438M [00:22<01:01, 5.11MB/s]
+2024-06-13 20:35:41,341:WARNING:model.safetensors:  31%|##############################################6                                                                                                       | 136M/438M [00:23<00:54, 5.49MB/s]
+2024-06-13 20:35:43,038:WARNING:model.safetensors:  34%|##################################################2                                                                                                   | 147M/438M [00:25<00:51, 5.68MB/s]
+2024-06-13 20:35:44,671:WARNING:model.safetensors:  36%|#####################################################8                                                                                                | 157M/438M [00:27<00:47, 5.88MB/s]
+2024-06-13 20:35:46,306:WARNING:model.safetensors:  38%|#########################################################4                                                                                            | 168M/438M [00:28<00:44, 6.03MB/s]
+2024-06-13 20:35:47,991:WARNING:model.safetensors:  41%|#############################################################                                                                                         | 178M/438M [00:30<00:42, 6.09MB/s]
+2024-06-13 20:35:49,846:WARNING:model.safetensors:  43%|################################################################6                                                                                     | 189M/438M [00:32<00:41, 5.95MB/s]
+2024-06-13 20:35:51,493:WARNING:model.safetensors:  45%|####################################################################2                                                                                 | 199M/438M [00:33<00:39, 6.07MB/s]
+2024-06-13 20:35:53,099:WARNING:model.safetensors:  48%|#######################################################################8                                                                              | 210M/438M [00:35<00:36, 6.20MB/s]
+2024-06-13 20:35:54,554:WARNING:model.safetensors:  50%|###########################################################################4                                                                          | 220M/438M [00:36<00:33, 6.47MB/s]
+2024-06-13 20:35:56,203:WARNING:model.safetensors:  53%|###############################################################################                                                                       | 231M/438M [00:38<00:32, 6.44MB/s]
+2024-06-13 20:35:57,785:WARNING:model.safetensors:  55%|##################################################################################6                                                                   | 241M/438M [00:40<00:30, 6.49MB/s]
+2024-06-13 20:35:59,786:WARNING:model.safetensors:  57%|######################################################################################1                                                               | 252M/438M [00:42<00:30, 6.06MB/s]
+2024-06-13 20:36:01,855:WARNING:model.safetensors:  60%|#########################################################################################7                                                            | 262M/438M [00:44<00:30, 5.72MB/s]
+2024-06-13 20:36:03,420:WARNING:model.safetensors:  62%|#############################################################################################3                                                        | 273M/438M [00:45<00:27, 5.99MB/s]
+2024-06-13 20:36:05,266:WARNING:model.safetensors:  65%|################################################################################################9                                                     | 283M/438M [00:47<00:26, 5.89MB/s]
+2024-06-13 20:36:07,009:WARNING:model.safetensors:  67%|####################################################################################################5                                                 | 294M/438M [00:49<00:24, 5.93MB/s]
+2024-06-13 20:36:08,786:WARNING:model.safetensors:  69%|########################################################################################################1                                             | 304M/438M [00:51<00:22, 5.92MB/s]
+2024-06-13 20:36:10,706:WARNING:model.safetensors:  72%|###########################################################################################################7                                          | 315M/438M [00:53<00:21, 5.78MB/s]
+2024-06-13 20:36:12,562:WARNING:model.safetensors:  74%|###############################################################################################################3                                      | 325M/438M [00:54<00:19, 5.74MB/s]
+2024-06-13 20:36:14,287:WARNING:model.safetensors:  77%|##################################################################################################################9                                   | 336M/438M [00:56<00:17, 5.83MB/s]
+2024-06-13 20:36:15,754:WARNING:model.safetensors:  79%|######################################################################################################################5                               | 346M/438M [00:58<00:14, 6.18MB/s]
+2024-06-13 20:36:17,564:WARNING:model.safetensors:  81%|##########################################################################################################################1                           | 357M/438M [00:59<00:13, 6.06MB/s]
+2024-06-13 20:36:19,499:WARNING:model.safetensors:  84%|#############################################################################################################################6                        | 367M/438M [01:01<00:12, 5.85MB/s]
+2024-06-13 20:36:21,234:WARNING:model.safetensors:  86%|#################################################################################################################################2                    | 377M/438M [01:03<00:10, 5.91MB/s]
+2024-06-13 20:36:23,294:WARNING:model.safetensors:  89%|####################################################################################################################################8                 | 388M/438M [01:05<00:08, 5.63MB/s]
+2024-06-13 20:36:25,166:WARNING:model.safetensors:  91%|########################################################################################################################################4             | 398M/438M [01:07<00:07, 5.62MB/s]
+2024-06-13 20:36:27,087:WARNING:model.safetensors:  93%|############################################################################################################################################          | 409M/438M [01:09<00:05, 5.57MB/s]
+2024-06-13 20:36:28,916:WARNING:model.safetensors:  96%|###############################################################################################################################################6      | 419M/438M [01:11<00:03, 5.62MB/s]
+2024-06-13 20:36:30,848:WARNING:model.safetensors:  98%|###################################################################################################################################################2  | 430M/438M [01:13<00:01, 5.56MB/s]
+2024-06-13 20:36:32,344:WARNING:model.safetensors: 100%|######################################################################################################################################################| 438M/438M [01:14<00:00, 5.51MB/s]
+2024-06-13 20:36:32,348:WARNING:model.safetensors: 100%|######################################################################################################################################################| 438M/438M [01:14<00:00, 5.86MB/s]
+2024-06-13 20:36:32,348:WARNING:
+2024-06-13 20:36:33,106:WARNING:tokenizer_config.json:   0%|                                                                                                                                                         | 0.00/1.30k [00:00<?, ?B/s]
+2024-06-13 20:36:33,107:WARNING:tokenizer_config.json: 100%|################################################################################################################################################| 1.30k/1.30k [00:00<00:00, 1.30MB/s]
+2024-06-13 20:36:33,107:WARNING:
+2024-06-13 20:36:33,633:WARNING:vocab.txt:   0%|                                                                                                                                                                      | 0.00/262k [00:00<?, ?B/s]
+2024-06-13 20:36:34,309:WARNING:vocab.txt: 100%|###############################################################################################################################################################| 262k/262k [00:00<00:00, 388kB/s]
+2024-06-13 20:36:34,310:WARNING:vocab.txt: 100%|###############################################################################################################################################################| 262k/262k [00:00<00:00, 387kB/s]
+2024-06-13 20:36:34,310:WARNING:
+2024-06-13 20:36:35,606:WARNING:special_tokens_map.json:   0%|                                                                                                                                                         | 0.00/132 [00:00<?, ?B/s]
+2024-06-13 20:36:35,606:WARNING:special_tokens_map.json: 100%|##########################################################################################################################################################| 132/132 [00:00<?, ?B/s]
+2024-06-13 20:36:35,608:WARNING:
+2024-06-13 20:37:17,208:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 20:37:17,504:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:163: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 20:37:17,705:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:281: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 20:53:13,145:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 20:57:22,657:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 20:57:40,987:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 20:57:41,257:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:173: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 20:57:41,427:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:293: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 20:58:22,585:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 20:58:24,709:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:173: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 20:58:24,874:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:213: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 21:00:20,954:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:00:23,105:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:173: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 21:00:23,263:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:213: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 21:01:19,838:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:01:36,611:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:01:36,855:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:173: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 21:01:37,007:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:293: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 21:02:16,924:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:02:18,375:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:02:24,703:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:02:34,147:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:02:34,398:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:173: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 21:02:34,559:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:293: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 21:02:40,051:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:02:41,997:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:173: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 21:02:42,206:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:213: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 21:04:05,953:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:04:24,821:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:04:25,084:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:174: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 21:04:25,244:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:294: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 21:04:33,438:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:04:36,155:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:04:38,086:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:174: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 21:04:38,252:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:214: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+
+2024-06-13 21:04:40,571:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:04:54,919:WARNING:C:\Users\Frags\anaconda3\envs\final-project-bootcamp\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning:
+
+Version mismatch:
+current: {'deps_info': {'pip': '24.0', 'setuptools': '69.5.1', 'pycaret': '3.3.2', 'IPython': '8.25.0', 'ipywidgets': '8.1.3', 'tqdm': '4.66.4', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.22.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.8', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.0', 'imblearn': '0.12.3', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+
+
+2024-06-13 21:04:55,216:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:174: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+
+2024-06-13 21:04:55,377:WARNING:E:\My Drive\Learning\From Bootcamp\IndonesiaAI - NLP\Employee-Sentiment-Tracker\streamlit_app.py:294: UserWarning:
+
+Parsing dates in %d/%m/%Y %H:%M:%S format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+
+

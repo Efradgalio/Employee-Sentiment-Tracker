@@ -44,6 +44,7 @@ def print_json(data):
 
 # Function to remove stopwords
 def remove_stopwords(text):
+    stop_words = set(stopwords.words('english'))
     if not isinstance(text, str):
         return text  # Return text that is not string
     words = text.split()  # Split text into words
@@ -136,7 +137,6 @@ def processing(file_path):
     df_processed['user_responses_cleaned'] = df['content'].apply(lambda x: x.lower() if isinstance(x, str) else x)
 
     ## -- STOP WORDS -- ##
-    stop_words = set(stopwords.words('english'))
     df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].astype(str).apply(remove_stopwords)
 
     ## -- REMOVE PUNCTUATION -- ##
@@ -155,5 +155,35 @@ def processing(file_path):
     ## -- LEMMATIZATOIN -- ##
     df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(custom_lemmatization)
     
+    return df_processed
+
+
+def processing_csv(df):
+    ## DATA READ AND CONVERSION TO DATAFRAME ##
+    # Example usage
+
+    ## DATA PREPROCESSING ##
+    ## -- LOWERCASE -- ##
+    df_processed = df.copy()
+    df_processed['user_responses_cleaned'] = df['content'].apply(lambda x: x.lower() if isinstance(x, str) else x)
+
+    ## -- STOP WORDS -- ##
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].astype(str).apply(remove_stopwords)
+
+    ## -- REMOVE PUNCTUATION -- ##
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(remove_punctuation)
+
+
+    ## -- REMOVE OTHER PUNCTUATION -- ##
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(remove_non_alpha)
+
+    ## -- SLANG WORDS -- ##
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(lambda x: replace_words(x, replacements))
+
+    ## -- Duplicate Words -- ##
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(lambda x: remove_duplicate_letters(x))
+
+    ## -- LEMMATIZATOIN -- ##
+    df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].apply(custom_lemmatization)
     return df_processed
 
