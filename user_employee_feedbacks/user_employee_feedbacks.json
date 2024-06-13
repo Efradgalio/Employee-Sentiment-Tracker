@@ -35,6 +35,21 @@
         {
             "role": "user",
             "content": "nothing"
+        },
+        {
+            "role": "user",
+            "content": "test the created at",
+            "created_at": "13/06/2024 00:00:00"
+        },
+        {
+            "role": "user",
+            "content": "test the current date with the hours as well",
+            "created_at": "13/06/2024 00:00:00"
+        },
+        {
+            "role": "user",
+            "content": "test again the current timeee",
+            "created_at": "13/06/2024 05:48:03"
         }
     ]
 }
