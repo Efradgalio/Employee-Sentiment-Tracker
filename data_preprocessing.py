@@ -8,12 +8,19 @@ import string
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-
+from gensim.models import Word2Vec
 
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('punkt')
 
+######################################### SET PARAMETERS #########################################
+path = os.getcwd()
+TOPIC_MODELING_FOLDER = 'topic_modeling'
+MODEL_NAME = 'word2vec_sg.bin'
+
+######################################### LOAD MODEL #########################################
+model_w2v_sg = Word2Vec.load(os.path.join(TOPIC_MODELING_FOLDER, MODEL_NAME))
 
 ######################################### HELPER FUNCTIONS #########################################
 def read_json(file_path):
@@ -37,7 +44,6 @@ def print_json(data):
 
 # Function to remove stopwords
 def remove_stopwords(text):
-    stop_words = set(stopwords.words('english'))
     if not isinstance(text, str):
         return text  # Return text that is not string
     words = text.split()  # Split text into words
@@ -105,6 +111,15 @@ def custom_lemmatization(text, exclude_words=[]):
     lemmatized_text = ' '.join(lemmatized_words)
     return lemmatized_text
 
+# -- TEXT EMBEDDINGS WITH WORD2VEC -- ##
+def embed_text(sentences, model=model_w2v_sg):
+    vectorized_text = []
+    for word_list in sentences:
+      vectorized_text = [model.wv[word] for word in word_list if word in model.wv]  # OOV handler (ignore)
+      vectorized_text.append(vectorized_text)
+    vec_text_df = pd.DataFrame(np.array(vectorized_text))
+    return vec_text_df
+
 ######################################### START DATA PREPROCESSING #########################################
 
 def processing(file_path):
@@ -121,6 +136,7 @@ def processing(file_path):
     df_processed['user_responses_cleaned'] = df['content'].apply(lambda x: x.lower() if isinstance(x, str) else x)
 
     ## -- STOP WORDS -- ##
+    stop_words = set(stopwords.words('english'))
     df_processed['user_responses_cleaned'] = df_processed['user_responses_cleaned'].astype(str).apply(remove_stopwords)
 
     ## -- REMOVE PUNCTUATION -- ##
