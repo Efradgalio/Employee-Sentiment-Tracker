@@ -1,5 +1,9 @@
 import pandas as pd
 import torch
+from sklearn.metrics import classification_report, roc_curve, roc_auc_score
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
 from transformers import BertTokenizer, BertForSequenceClassification
 
 class BertSentimentAnalyzer:
@@ -43,7 +47,7 @@ class BertSentimentAnalyzer:
         dataframe['negative_percentage'] = negative_percentages
         return dataframe
 
-    def predict_manual_input(self, text):
+    def execute_predict_manual(self, text):
         """Predict sentiment for a manually inputted text."""
         predictions = self.tokenize_predict([text])
         positive_percentage, negative_percentage = self.compute_percentage(predictions)
@@ -53,6 +57,66 @@ class BertSentimentAnalyzer:
             "positive_percentage": positive_percentage[0],
             "negative_percentage": negative_percentage[0]
         }
+
+    def evaluate(self, dataframe, text_column, true_labels):
+        """Evaluate model's predictions against true labels."""
+        if not self.model or not self.tokenizer:
+            raise ValueError("Model and tokenizer must be loaded before evaluation.")
+
+        texts = self.convert_to_list(dataframe, text_column)
+        predictions = self.tokenize_predict(texts)
+        self.predicted_labels = [pred.argmax().item() for pred in predictions]
+        self.true_labels = true_labels
+
+        # Classification report
+        report = classification_report(true_labels, self.predicted_labels, target_names=['Negative', 'Positive'])
+        print("Classification Report:")
+        print(report)
+
+        # Confusion Matrix
+        self.visualize_confusion_matrix()
+        plt.savefig('confusion_matrix.png')  # Save the confusion matrix plot
+
+        # ROC-AUC Curve
+        self.visualize_roc_auc()
+        plt.savefig('roc_auc_curve.png')  # Save the ROC-AUC curve plot
+
+        # Return evaluation metrics
+        return report
+
+    def visualize_roc_auc(self, save_path=None):
+        """Visualize the ROC-AUC curve."""
+        if not self.true_labels or not self.predicted_labels:
+            raise ValueError("True labels and predicted labels must be available for ROC-AUC visualization.")
+
+        roc_auc = roc_auc_score(self.true_labels, self.predicted_labels)
+        fpr, tpr, _ = roc_curve(self.true_labels, self.predicted_labels)
+        plt.figure(figsize=(8, 6))
+        plt.plot(fpr, tpr, color='blue', lw=2, label=f'ROC Curve (AUC = {roc_auc:.2f})')
+        plt.plot([0, 1], [0, 1], color='gray', linestyle='--')
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.title('ROC-AUC Curve')
+        plt.legend(loc='lower right')
+        if save_path:
+            plt.savefig(save_path)  # Save the ROC-AUC curve plot to specified path
+        plt.show()
+
+    def visualize_confusion_matrix(self, save_path=None):
+        """Visualize the confusion matrix."""
+        if not self.true_labels or not self.predicted_labels:
+            raise ValueError("True labels and predicted labels must be available for confusion matrix visualization.")
+
+        cm = confusion_matrix(self.true_labels, self.predicted_labels)
+        plt.figure(figsize=(8, 6))
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False,
+                    xticklabels=['Negative', 'Positive'], yticklabels=['Negative', 'Positive'])
+        plt.title('Confusion Matrix')
+        plt.xlabel('Predicted Labels')
+        plt.ylabel('True Labels')
+        if save_path:
+            plt.savefig(save_path)  # Save the confusion matrix plot to specified path
+        plt.show()
 
     def save_csv(self, dataframe, output_path):
         """Save DataFrame with predictions to a CSV file."""
