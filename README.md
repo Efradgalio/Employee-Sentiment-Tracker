@@ -12,3 +12,8 @@ Employee Opinion Tracker is a comprehensive aimed at understanding organizationa
 
 
 To use streamlit_app_openai_chatbot.py you need to insert your OPENAI_API_KEY in ./.streamlit/secrets.toml
+
+[python-version]:https://img.shields.io/badge/python-3.11.9-brightgreen.svg
+[fork-image]:https://img.shields.io/github/forks/Efradgalio/Employee-Sentiment-Tracker
+[fork-url]:https://github.com/Efradgalio/Employee-Sentiment-Tracker/network
+
