@@ -52,6 +52,16 @@ To use streamlit_app_openai_chatbot.py you need to insert your OPENAI_API_KEY in
 └── streamlit_app_openai_chatbot.py
 ```
 
+## Deployment
+
+Deployment currently in local using Streamlit only. I have included two screenshoots how the Streamlit Dashboard looks like:
+
+<img src="Result 1.jpg" alt="sample 1" width="200" />
+
+and
+
+<img src="Result 2.jpg" alt="sample 2" width="200" />
+
 ## License
 
 Distributed under the terms of the [MIT](https://opensource.org/licenses/MIT) license, "Employee-Sentiment-Tracker" is free and open source software.
