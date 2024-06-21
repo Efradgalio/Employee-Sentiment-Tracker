@@ -70,6 +70,10 @@ I have included two screenshoots how the Streamlit Dashboard looks like:
 ![result_1](Result_1.jpeg)
 ![result_2](Result_2.jpeg)
 
+## Detailed Presentation
+To see the detailed Background & Problem statement, Objective & Scope, Workflow, Data Source, Model Evaluation & Performance, and Conclusion please
+see **SPARK - Employee Opinion Tracker.pdf**
+
 ## License
 
 Distributed under the terms of the [MIT](https://opensource.org/licenses/MIT) license, "Employee-Sentiment-Tracker" is free and open source software.
