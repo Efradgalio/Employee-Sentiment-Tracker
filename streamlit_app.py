@@ -229,7 +229,9 @@ if selected == 'Employee Tracker':
                 )
 
             st.write("List of Today's Feedbacks")
+            # st.table(test_data.loc[test_data['created_at'].dt.date == today, ['created_at', 'content', 'sentiment', 'topic']].to_dict(orient='records'))# Calculate counts of each place
             st.table(test_data.loc[test_data['created_at'].dt.date == today, ['created_at', 'content', 'sentiment']].to_dict(orient='records'))# Calculate counts of each place
+
             st.subheader('Topic Distribution by Place & Departments for the past 3 months')
 
             ########################################## PLACE BARCHART #####################################################
