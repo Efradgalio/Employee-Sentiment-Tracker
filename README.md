@@ -45,7 +45,7 @@ To use streamlit_app_openai_chatbot.py you need to insert your OPENAI_API_KEY in
 ├── SPARK - Employee Opinion Tracker.pdf
 ├── bert_sentiment.py
 ├── data_preprocessing.py
-├── inferencing.py
+├── inference.py
 ├── logs.log
 ├── requirements.txt
 ├── Result_1.jpeg
