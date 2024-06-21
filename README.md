@@ -12,7 +12,7 @@ Employee Opinion Tracker is a comprehensive aimed at understanding organizationa
 
 To use streamlit_app_openai_chatbot.py you need to insert your OPENAI_API_KEY in ./.streamlit/secrets.toml
 
-# Tree Structure
+## Tree Structure
 
 ```zsh
 ├── .conda
@@ -52,6 +52,13 @@ To use streamlit_app_openai_chatbot.py you need to insert your OPENAI_API_KEY in
 └── streamlit_app_openai_chatbot.py
 ```
 
+## License
+
+Distributed under the terms of the [MIT](https://opensource.org/licenses/MIT) license, "Employee-Sentiment-Tracker" is free and open source software.
+
+## Issues
+
+If you encounter any problems, please [file an issue](https://github.com/Efradgalio/President-Election-Sentiment-Analysis/issues) along with a detailed description.
 
 [python-version]:https://img.shields.io/badge/python-3.11.9-brightgreen.svg
 [latest-version]:https://img.shields.io/badge/version-1.0.0-blue.svg
