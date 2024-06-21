@@ -58,11 +58,8 @@ To use streamlit_app_openai_chatbot.py you need to insert your OPENAI_API_KEY in
 
 Deployment currently in local using Streamlit only. I have included two screenshoots how the Streamlit Dashboard looks like:
 
-<img src="Result_1.jpeg" alt="sample 1" width="2000" />
-
-and
-
-<img src="Result_2.jpeg" alt="sample 2" width="2000" />
+![result_1](Result_1.jpeg)
+![result_2](Result_2.jpeg)
 
 ## License
 
