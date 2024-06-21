@@ -54,6 +54,14 @@ To use streamlit_app_openai_chatbot.py you need to insert your OPENAI_API_KEY in
 └── streamlit_app_openai_chatbot.py
 ```
 
+## Running the App
+- Don't forget to install all the required library
+
+Running the `app.py`:
+```commandline
+streamlit run streamlit_app.py
+```
+
 ## Deployment
 
 Deployment currently in local using Streamlit only. 
